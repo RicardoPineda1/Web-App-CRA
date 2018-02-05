@@ -1,0 +1,549 @@
+        <style>
+            #p1{
+            background-color: none;
+            }
+
+            #p2{
+            background-color: lightgray;
+                width: 700px;
+                height: 35px;
+                font-family: sans-serif;
+                text-align: left;
+            }
+
+            #definicion{
+                background-color: whitesmoke;
+                width: 400px;
+                text-align: center;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            a{
+                color: black;
+                text-decoration: none;
+            }
+            
+            #imagenstyle1{
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            ol{
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: #f1f1f1;
+                position: fixed;
+                top: 0;
+                width: 100%;
+            }
+
+            li{
+                float:left;
+            }
+
+            li a{
+                display: block;
+                color: black;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+            li a:hover{
+                background-color: red;
+            }
+
+            .active{
+                background-color: red;
+            }
+
+            #Boton1{
+                background-color: gold;
+                text-align: center;
+                width: 300px;
+                height: 50px;
+                font-family: sans-serif;
+            } 
+            #BotonHoteles{
+                background-color: gold;
+                text-align: center;
+                width: 300px;
+                height: 50px;
+                font-family: sans-serif;
+                float: right;
+                overflow: hidden;
+            } 
+
+            #BotonTuricentros{
+                background-color: gold;
+                text-align: center;
+                width: 300px;
+                height: 50px;
+                font-family: sans-serif;
+                float: right;
+                overflow: hidden;
+            }
+
+            hr.style1{ 
+             	border-top: 1px 
+                dashed #8c8b8b;
+            } 
+
+            #Boton2{
+                background-color: gold;
+                font-family: sans-serif;
+                width: auto;
+                height: auto;
+            }
+
+            #BarraFinal{
+                background-color: grey;
+                font-family: sans-serif;
+                text-align: left;
+
+            }
+            #Footer1{
+                background-color: dimgray;
+                font-family: sans-serif;
+            }
+
+            #descripcion1{
+                background-color: whitesmoke;
+                margin-left: 19px;
+                margin-right: 25%;
+                height: auto;
+                text-align: left;
+                
+            }
+            #BotonDesarrollos{
+                color: white;
+                background-color: red;
+                height: 15px;
+                width: auto;
+            }
+            #imagenstyle2{
+                margin-left: 0px;
+            }
+
+            #texto1{
+                text-align: center;
+                font-family: sans-serif;
+            }
+
+            #Boton3{
+                background-color: gold;
+                text-align: center;
+                height: 35px;
+                width: auto;
+                font-family: sans-serif;
+                margin-left: 0px;
+            }
+            h3{
+                font-family: sans-serif;
+                font-display: fallback;
+                font-size: 20px;
+
+            }
+            #imagenstyle4{
+                margin-left: 200px
+            }
+
+            #imagenstyle5{
+                margin-left: 300px;
+            }
+
+            #descripcion2{
+                background-color: whitesmoke;
+                margin-left: 50px;
+                margin-right: 50px;
+                height: auto;
+                text-align: center;
+            }
+            p{
+                color: darkslategrey;
+            }
+
+            #Boton4{
+                background-color: gold;
+                text-align: center;
+                height: 35px;
+                width: auto;
+                font-family: sans-serif;
+                padding: 5px;
+            }
+
+            h4 {
+                position: relative;
+                text-align: left;
+            }
+
+            h4 span {
+                display: inline-block;
+                padding: 0 10px;
+                background: #fff;
+            }
+
+            h4:before{
+                content: "";
+                display: block;
+                position: absolute;
+                z-index: -1;
+                left: 0;
+                right: 0;
+                top: 50%;
+                height: 1px;
+                background: #ccc;
+            }
+
+            #ImagenesHoteles{
+                width: auto;
+                height: auto;
+            }
+
+            /* INTERFAZ LOGIN */
+            
+            /* Inputs */
+            input[type=text], input[type=password] {
+                width: 100%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                display: inline-block;
+                border: 1px solid #ccc;
+                box-sizing: border-box;
+            }
+
+                #BotonIniciaSesion{
+                    margin-left: 0px;
+                    width: auto;
+                }
+
+            /* Estilo de botones */
+            button {
+                background-color: #4CAF50;
+                color: white;
+                padding: 14px 20px;
+                margin: 8px 0;
+                border: none;
+                cursor: pointer;
+                width: 100%;
+            }
+
+            button:hover {
+                opacity: 0.8;
+            }
+
+            .cancelbtn {
+                width: auto;
+                padding: 10px 18px;
+                background-color: #f44336;
+            }
+
+            /* Centrar el cuadro */
+            .imgcontainer {
+                text-align: center;
+                margin: 24px 0 12px 0;
+                position: relative;
+            }
+
+            img.avatar {
+                width: 40%;
+                border-radius: 50%;
+            }
+
+            .container {
+                padding: 16px;
+            }
+
+            span.psw {
+                float: right;
+                padding-top: 16px;
+            }
+
+            /* Fondo del cuadro */
+            .modal {
+                display: none;
+                position: fixed; 
+                z-index: 1; 
+                left: 0;
+                top: 0;
+                width: 100%; 
+                height: 100%; 
+                overflow: auto; 
+                background-color: rgb(0,0,0); 
+                background-color: rgba(0,0,0,0.4); 
+                padding-top: 60px;
+            }
+
+            /* Modal Content/Box */
+            .modal-content {
+                background-color: #fefefe;
+                margin: 5% auto 15% auto; 
+                border: 1px solid #888;
+                width: 80%; 
+            }
+
+            /* Boton para cerrar la interfaz de login */
+            .close {
+                position: absolute;
+                right: 25px;
+                top: 0;
+                color: #000;
+                font-size: 35px;
+                font-weight: bold;
+            }
+
+            .close:hover,
+            .close:focus {
+                color: red;
+                cursor: pointer;
+            }
+
+            /* zoom */
+            .animate {
+                -webkit-animation: animatezoom 0.6s;
+                animation: animatezoom 0.6s
+            }
+
+            @-webkit-keyframes animatezoom {
+                from {-webkit-transform: scale(0)} 
+                to {-webkit-transform: scale(1)}
+            }
+
+            @keyframes animatezoom {
+                from {transform: scale(0)} 
+                to {transform: scale(1)}
+            }
+
+            @media screen and (max-width: 300px) {
+                span.psw {
+                   display: block;
+                   float: none;
+                }
+                .cancelbtn {
+                   width: 100%;
+                }
+            }
+
+            #botonisderechabarra{
+                background-attachment: fixed;
+            }
+            
+            #imgr{
+                width: 500px;
+                height: auto;
+                border-left: 20%;
+            }
+
+            #imgm{
+                width: 500px;
+                height: auto;
+                border-left: 20%;
+            }
+            #img{
+                width: 700px;
+                height: auto;
+            }
+
+            #imgj{
+                width: 500px;
+                height: auto;
+            }
+
+            #imgp{
+                width: 700px;
+                height: auto;
+            }
+
+            #imgaq{
+                width: 450px;
+                height: auto;
+
+            }
+
+            #imgtorr{
+                width: 450px;
+                height: auto;
+            }
+    
+            #imgh2o{
+                width: 450px;
+                height: auto;
+            }
+
+            #imguxmel{
+                width: 450px;
+                height: auto;
+            }
+
+            #imgvo{
+                width: 450px;
+                height: auto;
+            }
+
+            #imgmon{
+                width: 450px;
+                height: auto;
+            }
+
+            #imgcl{
+                width: 450px;
+                height: auto;
+            }
+
+            #mansiondelrionav{
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: darkgoldenrod;
+                position: fixed;
+                top: 0;
+                width: 100%;
+            }
+
+            #rivieranav{
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: deepskyblue;
+                position: fixed;
+                top: 0;
+                width: 100%;
+            }
+
+            #jardinnav{
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: forestgreen;
+                position: fixed;
+                top: 0;
+                width: 100%;
+            }
+
+            div.gallery {
+                margin: 5px;
+                border: 1px solid #ccc;
+                float: left;
+                width: 180px;
+            }
+
+            div.gallery:hover {
+                border: 1px solid #777;
+            }
+
+            div.gallery img {
+                width: 100%;
+                height: auto;
+            }
+
+            div.desc {
+                padding: 15px;
+                text-align: center;
+            }
+
+            #Boton01{
+                background-color: grey;
+                font-family: sans-serif;
+                width: auto;
+                height: auto;
+            }
+
+            /* Add animation (Chrome, Safari, Opera) */
+            @-webkit-keyframes example {
+                from {top:-100px;opacity: 0;}
+                to {top:0px;opacity:1;}
+            }
+
+            /* Add animation (Standard syntax) */
+            @keyframes example {
+                from {top:-100px;opacity: 0;}
+                to {top:0px;opacity:1;}
+            }
+
+            /* The modal's background */
+            .modal {
+              display: none;
+              position: fixed;
+              left: 0;
+              top: 0;
+              width: 100%;
+              height: 100%;
+              overflow: auto;
+              background-color: rgb(0, 0, 0);
+              background-color: rgba(0, 0, 0, 0.4);
+            }
+
+            /* Display the modal when targeted */
+            .modal:target {
+              display: table;
+              position: absolute;
+            }
+
+            /* The modal box */
+            .modal-dialog {
+              display: table-cell;
+              vertical-align: middle;
+            }
+
+            /* The modal's content */
+            .modal-dialog .modal-content {
+              margin: auto;
+              background-color: #f3f3f3;
+              position: relative;
+              padding: 0;
+              outline: 0;
+              border: 1px #777 solid;
+              text-align: justify;
+              width: 80%;
+              box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+              /* Add animation */
+              -webkit-animation-name: example; /* Chrome, Safari, Opera */
+              -webkit-animation-duration: 0.5s; /* Chrome, Safari, Opera */
+              animation-name: example;
+              animation-duration: 0.5s;
+            }
+
+            /* The button used to close the modal */
+            .closebtn {
+              text-decoration: none;
+              float: right;
+              font-size: 35px;
+              font-weight: bold;
+              color: #fff;
+            }
+
+            .closebtn:hover,
+            .closebtn:focus {
+              color: #000;
+              text-decoration: none;
+              cursor: pointer;
+            }
+
+            .container {
+              padding: 2px 16px;
+            }
+
+            header {
+              background-color: #5cb85c;
+              font-size: 25px;
+              color: white;
+            }
+
+            footer {
+              background-color: #5cb85c;
+              font-size: 20px;
+              color: white;
+            }
+
+            body,h1 {font-family: "Montserrat", sans-serif}
+            img {margin-bottom: -7px}
+            .w3-row-padding img {margin-bottom: 12px}
+
+            </style>
