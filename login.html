@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+         <meta name="viewport" content="width=device-width, initial-scale=1">
+         <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+        <body>
+                    <nav>
+                        <ol>
+                          <li><a href="index.html">Inicio</a></li>
+                          <li><a href="desarrollos.html">Desarrollos</a></li>
+                          <li><a href="pagos.html">Control de pagos</a></li>
+                          <li><a href="about.html">Acerca de</a></li>
+                          <li><a href="beneficios.html">Beneficios</a></li>
+                          <li style="float:right"><a class="active" href="login.html">Iniciar Sesión</a></li>  
+                        </ol>
+                    </nav>
+
+        <h2>Modal Login Form</h2>
+        <div style="text-align: center;">
+        <button onclick="document.getElementById('id01').style.display='block'" id="BotonIniciaSesion">Iniciar Sesión</button>
+        </div>
+
+        <div id="id01" class="modal">
+
+          <form class="modal-content animate" action="/action_page.php">
+            <div class="imgcontainer">
+              <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAANlBMVEXk5ueutLepsLPo6uvj5eavtbjJzc+/xMbp6+yrsbXd4OGnrrK0ubzQ1NXZ3N3O0dO8wcPDyMmu9XhTAAAG40lEQVR4nO2d65qjIAyGleABxdP93+xqbesJJVhawmzeP7vzzHTXbxKSEDEmCcMwDMMwDMMwDMMwDMMwDMMwDMMwDMMwDMMwDMMwfxAASKq26UaatpLTl38IANkOfSpqoR6Mf0n10Mi/ohKqXAuVHhBC51X8IgEao7wZJXSXRK0RIFen8l4ih4g1Qn5uvpXGOlaN0KQIfbMduwglguwFTt9Do65i0wgN0n5vjZGZEQoHA86IPiqJ2tGCDyumMvRlo5Hu8maNsSzGymhApWqVZVrrTNVnSUS0UUg0CFQi7fO2msrvqeSWrbmOi0SiPFy6yKb6c3Pp41ddZtIoqlDXjedgvqIqjT9YGisCQT3cgN4tvkGe+h2YcwptP4ViYxZbVQ1dfRCoSOdFaDZGsceN3QfmT+WEJcrt9db2sAHdcS0iPhaK3SLcXuqUJ6SUyW5XX/bHlZhRNeLB5RaFAFXXZ2Ii65vt4jz6qRqoStw73EshyFzXyzeVWq80yI9+SjRlwGBWCFW/L2CUXn/wGE9TmvFUHq50UjjuhA0K1lkPDCtRtAGFnGG40Hos1gajvjTVi0TTZlkTNOLRhGkt29NWzcpKleGXQNCIx1U4ctWqWS0102+B4Ep03dWr9ychM3ybXNo31SbXLPsko0JyOXFfznyskNweo3LvrVkUEos1psLEwrIOpfm3U5AyoruTroJla1aozK2BQJyY4YLFCc/sTyuauvbw10XLSaBJVR5S0Q4YXAWuemonTkor6Zeuy7BuwP5ZRUghnJTXZ4glnV+UCpR6p47ZcCXwKkapJqCkHW6BZl2QXaUZRajplrsIXFsQ+qvfDZ2cD4WLwJVldg3kPXSCqakPgRFYmvaUK+hs9B1qtq1AS4Ci0zctT6qSa4EWF50IqGkLWuFWoDXFqIv/87cAUqAqlu0C5rSGItMYxirU2DRBTiHSS1e9+hIjkJCX4hSuTj0hgsyDkKI24LLFEvshR9axZLIFKuMvVabpxq8RQhkf43SrvRC2TqejEFV5L/tZdF+OTuWN2j29y2h0jUdp92S6e7S/3PeeqcRulyntgDFdjHfnzHAbzgylLgYmIXavH0a3PEh1ouxb4MXl0AoJhVJMqFkUtlgvpdQRRnT13RXWpG4+2TOAu0JKyxBzd81dIaF8P2ENH84Kid0htbups0JaToo4qaAaeIIogFKCJxXsG4Yif2Jpkj6hVNDM2JO+eoERSKjf/cb9NMYV1OLMhEtr3w6piu0FLoLgoGhCfAMNA0kTJqYT2zehddBk4TInquKNVSDBXPjkqrCpk1fGR3QxqAq8zBj1u6UPNoU0w8zMRa8Xr5BSi+3I+S0lvEKqcfTJ2SE1vEI6N5zO+FAhvYr7gPk5Z6xCWs2ZE8wScQqjeNI5AWPOQCmMQ2Biepwbp7CORWBimhqBUUjmYAKC41kSa9UmtP2fpcRxekv2xiyQdCVjAqR2mcCTxTL0Y81oRuyWOD4DzgAMmElYqSginYQ1AslgnWamivO5EjEASbd+jHsvT2R53Pom4Gyq4ChvaOOfKvgAQDaDrqfBkLNjirrWRfMHhiaugbKU03DPPJ/Ge0oo/5S6/wIwEPqavPAYaDKNnh2Kvp/mfE2Mf+q+GPKnt0ardLz2qsl7nQohTLfUHsNohcr00LUytlU5mqXtiqw+T4QbqdP43T6PZujupG7QAlWubRAiKzryCWTO7vdv0IxFQNHQLXIA2iFzt93RlrqjKBLKtkBvlmyomtwAZZB56vU2/iiyp1Ozjt55GJPkA5HS2HdMIx79mm9hmrkYWiMk1oHdnyF00B7quIX/hnseNIYakAG4geQ+NIbxVei+658bjf3vNULr0g71oHH4be6AxGXguhdU2vxQYol9+Mwrov9VneM2Md+rxt+YEU7nyfxAYv8LgbYxAV9Fpd8uAEDemZjvky+/CgPawPrSL79DwTSc+veo7HsCgy7BNV+qcCBUkjiivhJvUHMefsU3JELoILrF/9EbYgL9SyTlojN+T4j5fNDAG8rjOc0b00l/gj+BDYVEb8DbeWm/z2x5RHl6kPb06HZ4/GwYCYbRBR+nwtHjcsLgYykStmDq4/ETv89NfoGP/RQ9xCIYH/op4Tj6Qnw0p8f9fQAB+Gg0gfVBOgp88n5PqvXojg+MCFEI/MCIUazCiduzaiMIpDO3w2nAGxSO3MyJTjOsw3K3sIlkFaa3q1P3d1aE45abRuSkN1+2hx1/TALV2QUdINudMXLnllss6X7mxouFolqGt+a94Gflk+DGNFfXV8eExn1QZlyB5k6oiaconXHP+TFVNA+cFea1iIraVaD5aTPKuCtkGIZhGIZhGIZhGIZhfsk/F2tfPIOh2xIAAAAASUVORK5CYII=" alt="Avatar" class="avatar" height="200" width="120">
+            </div>
+
+            <div class="container">
+              <label><b>Usuario</b></label>
+              <input type="text" placeholder="Ingrese su usuario" name="uname" required>
+
+              <label><b>Contraseña</b></label>
+              <input type="password" placeholder="Ingrese su contraseña" name="psw" required>
+
+              <button type="submit">Iniciar Sesion</button>
+            <!-- <h1 style="text-align: center;"> O </h1>
+              <button type="submit">Crear una cuenta</button> -->
+              <label>
+                <input type="checkbox" checked="checked"> Recuerdame
+              </label>
+            </div>
+
+            <div class="container" style="background-color:#f1f1f1">
+              <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+              <span class="psw"><a href="#">¿Olvido su contraseña?</a></span>
+            </div>
+          </form>
+        </div>
+
+        <script>
+        var modal = document.getElementById('id01');
+
+        // Cerrar el cuadro de login cuando se toque fuera de el
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+        </script>
+    </body>
+</html>
